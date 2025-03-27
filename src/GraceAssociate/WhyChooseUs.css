@@ -1,0 +1,136 @@
+section.grace_why_choose_section h2 {
+    color: #003566;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-decoration: underline solid hsl(208.8deg 98.04% 20%) 4px;
+    text-decoration: underline solid hsl(208.8deg 98.04% 20%) 4px;
+    margin-bottom: 60px;
+}
+
+section.grace_why_choose_section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.grace_why_choose_blank {
+    width: 100%;
+    height: 100%;
+    background: #003566;
+    padding: 30px;
+}
+
+.grace_why_choose_div .row {
+    margin-bottom: 35px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 4.95px 2.6px;
+}
+
+.grace_why_choose_div .col-md-4 {
+    padding: 0px;
+}
+
+.grace_why_choose_div h4 {
+    font-size: 20px;
+    color: #003566;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.grace_why_choose_div p {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+button.paper_about_us_img_button {
+    margin-top: 55px;
+    background-color: #003566 !important;
+    color: white;
+    font-weight: bold;
+    padding: 15px 55px;
+    border-radius: 40px;
+    border: none;
+    text-transform: capitalize;
+    --animation-depth: 0.375em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.paper_about_us_img_button:hover {
+    box-shadow: black 1.95px 4.95px 2.6px;
+    transform: translateY(calc(-1*var(--animation-depth, .375em)));
+}
+
+.grace_why_choose_blank img {
+    width: 100px;
+    margin: 0px 18%;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Add shake class to trigger the animation */
+.shake {
+    animation: shake 0.5s ease-out 2;
+}
+
+button.paper_about_us_img:hover {
+    box-shadow: black 1.95px 4.95px 2.6px;
+    transform: translateY(calc(-1*var(--animation-depth, .375em)));
+}
+
+/* media query */
+
+
+
+@media (max-width: 768px) {
+    .grace_why_choose_div {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .grace_why_choose_blank {
+        width: 100%;
+        height: 150px;
+        background: #003566;
+    }
+
+    .grace_why_choose_blank img {
+        width: 100px;
+        margin: 0px 35%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .grace_why_choose_blank img {
+        width: 96px;
+        margin: 0% 13%;
+        display: block;
+        padding: 78% 0px;
+    }
+
+    .grace_why_choose_blank {
+        width: 100%;
+        height: 100%;
+        background: #003566;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,71 @@
+.bannerContainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+button.banner_button1 {
+    border-radius: 40px;
+    background-color: rgb(3 51 102);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 20px 60px;
+    margin-top: 30px;
+}
+
+button.banner_button2 {
+    border-radius: 40px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 16px 60px;
+    margin-top: 30px;
+    border: 3px solid white;
+    margin-left: 25px;
+}
+
+/* .banner-static {
+    width: 50%;
+    background: white;
+    padding: 26px;
+    border-radius: 50px;
+    z-index: 1;
+    position: relative;
+    top: -40px;
+    left: 25%;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 4.95px 2.6px;
+} */
+
+/* .banner-static a {
+    text-decoration: none;
+    padding-left: 80px;
+    color: black;
+    font-size: 16px;
+} */
+
+/* .banner-static.sticky {
+    position: fixed;
+    top: 0;
+    /* left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 50% !important;
+} */
+
+a.paper-banner-static-color {
+    background-color: rgb(0, 53, 102);
+    padding: 13px 40px;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 40px;
+    text-align: center;
+    margin: 0px;
+}

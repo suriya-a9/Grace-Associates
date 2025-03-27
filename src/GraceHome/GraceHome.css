@@ -1,0 +1,56 @@
+body {
+    font-family: "Noto Sans", serif !important;
+}
+
+/* WhatsAppChat.css */
+.whatsapp-chat-icon {
+    position: fixed;
+    bottom: 125px;
+    right: 28px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: 28px;
+    z-index: 1000;
+    animation: zoomInOut 2s infinite ease-in-out;
+}
+
+/* Define the animation */
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        transform: scale(1);
+        /* Original size */
+    }
+
+    50% {
+        transform: scale(1.2);
+        /* Zoomed in */
+    }
+}
+
+/* Hover effect */
+.whatsapp-chat-icon:hover {
+    transform: scale(1.1);
+    /* Slightly enlarges on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    .whatsapp-chat-icon {
+        bottom: 145px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}

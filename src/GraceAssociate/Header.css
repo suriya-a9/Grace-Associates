@@ -1,0 +1,12 @@
+.me-auto.navbar-nav a {
+    margin-left: 80px;
+    color: black;
+}
+
+.me-auto.navbar-nav {
+    margin-left: 100px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    background-color: white;
+}

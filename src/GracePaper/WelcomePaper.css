@@ -1,0 +1,190 @@
+/* Shaking animation */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-10px);
+        /* Shake to the left */
+    }
+
+    20% {
+        transform: translateX(10px);
+        /* Shake to the right */
+    }
+
+    30% {
+        transform: translateX(-10px);
+        /* Shake to the left */
+    }
+
+    40% {
+        transform: translateX(10px);
+        /* Shake to the right */
+    }
+
+    50% {
+        transform: translateX(-10px);
+        /* Shake to the left */
+    }
+
+    60% {
+        transform: translateX(10px);
+        /* Shake to the right */
+    }
+
+    70% {
+        transform: translateX(-10px);
+        /* Shake to the left */
+    }
+
+    80% {
+        transform: translateX(10px);
+        /* Shake to the right */
+    }
+
+    90% {
+        transform: translateX(-10px);
+        /* Shake to the left */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* End at original position */
+    }
+}
+
+.welcome_paper_div_button.shake {
+    animation: shake 0.5s ease-in-out;
+    /* Shake animation lasts for 2 seconds */
+}
+
+button.welcome_paper_div_button {
+    margin-top: 55px;
+    background-color: #003566;
+    color: white;
+    font-weight: bold;
+    padding: 15px 55px;
+    border-radius: 40px;
+    border: none;
+    text-transform: capitalize;
+    --animation-depth: 0.375em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.welcome_paper_div_button:hover {
+    box-shadow: black 1.95px 4.95px 2.6px;
+    transform: translateY(calc(-1*var(--animation-depth, .375em)));
+}
+
+.welcome_paper_div_icons_div span {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.welcome_paper_div_icons_div img {
+    font-size: 35px;
+    width: 35px;
+    margin-right: 15px;
+}
+
+.welcome_paper_div_icons_div {
+    color: #003566;
+}
+
+.welcome_paper_div h4 {
+    color: #003566;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.welcome_paper_div p {
+    color: black;
+    text-transform: uppercase;
+}
+
+.welcome_paper_image img {
+    height: 450px;
+    width: 80%;
+    margin-left: 19%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* section.welcome_paper_section h2 {
+    color: #003566;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+} */
+
+section.welcome_paper_section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+    .welcome_paper_image img {
+        height: 450px;
+        width: 100% !important;
+        margin-left: 0px !important;
+        border-radius: 20px;
+    }
+
+    .welcome_paper_div p {
+        padding-top: 25px;
+    }
+
+    .welcome_paper_div_icons_div {
+        color: #003566;
+        display: flex;
+        margin-bottom: 12px;
+    }
+
+    .welcome_paper_div_icons_div img {
+        font-size: 35px;
+        width: 35px;
+        margin-right: 5px;
+    }
+
+    .welcome_paper_div_icons_div span {
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .welcome_paper_image img {
+        height: 450px;
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .welcome_paper_div h4 {
+        color: #003566;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .welcome_paper_div_icons_div span {
+        display: block;
+    }
+
+    button.welcome_paper_div_button {
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,12 @@
+.paper_about_us_div_p {
+    font-size: 17px;
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+    .paper_about_us_div_p {
+        font-size: 15px;
+        margin-top: 45px;
+    }
+}

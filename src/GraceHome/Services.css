@@ -1,0 +1,87 @@
+section.grace_service_section h1 {
+    color: hsl(208.64deg 57.14% 30.2%);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+h4.industry_h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 45% 0px;
+    font-size: 45px;
+}
+
+.grace-service_div h4 {
+    color: hsl(208.8deg 98.04% 20%);
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    --animation-depth: 0.375em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}   
+
+.grace-service_div h4:hover {
+    color: #003566;
+    transform: translateY(calc(-1* var(--animation-depth, .375em)));
+    border: none;
+    border-radius: 21px;
+}
+
+.grace-service_div h4 svg {
+    color: black;
+}
+
+.grace-service_div h4:hover svg {
+    margin-left: 15px;
+    transition-duration: .5s;
+}
+
+.grace-service_div {
+    border-bottom: 2px solid black;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+section.grace_service_section {
+    margin-bottom: 45px;
+}
+
+.grace_service_section {
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+.grace_service_section .col-md-6.left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.grace_service_section .col-md-6.right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Animated state */
+.grace_service_section .col-md-6.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 900px) {
+
+    .grace_service_section .col-md-6.left,
+    .grace_service_section .col-md-6.right {
+        opacity: 1;
+        /* Make sure the content is fully visible */
+        transform: none;
+        /* Remove any translation effect */
+        transition: none;
+        /* Disable animation transitions */
+    }
+}

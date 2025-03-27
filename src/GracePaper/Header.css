@@ -1,0 +1,37 @@
+.me-auto.navbar-nav a {
+    margin-left: 80px;
+    color: black;
+}
+
+.me-auto.navbar-nav {
+    margin-left: 100px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    background-color: white;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: black !important;
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+.dropdown-menu.show a {
+    margin-left: 0px !important;
+}
+
+
+/* media query */
+
+/* @media (max-width: 768px) {
+    .me-auto.navbar-nav a {
+        color: black;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .me-auto.navbar-nav {
+        margin-left: 0px;
+    }
+} */

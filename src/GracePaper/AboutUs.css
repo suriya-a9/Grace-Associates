@@ -1,0 +1,199 @@
+section.paper_about_us h2 {
+    color: #003566;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-decoration: underline solid hsl(208.8deg 98.04% 20%) 4px;
+    text-decoration: underline solid hsl(208.8deg 98.04% 20%) 4px;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+}
+
+section.paper_about_us {
+    margin: 60px 0px;
+}
+
+img.paper_about_us_img_1 {
+    border-radius: 10px;
+    width: 35%;
+    height: 250px;
+    object-fit: cover;
+    float: right;
+    z-index: 6;
+    position: relative;
+}
+
+/* Initial state of the images */
+.paper_about_us_img_1,
+.paper_about_us_img_2 {
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease;
+    opacity: 0.8;
+    /* Slightly transparent initially */
+    transform: scale(1);
+    /* Normal size */
+}
+
+/* When the images are zoomed in */
+.paper_about_us_img_1.zoomIn,
+.paper_about_us_img_2.zoomIn {
+    opacity: 1;
+    transform: scale(1.1);
+    /* Zoom effect */
+}
+
+img.paper_about_us_img_2 {
+    border-radius: 10px;
+    width: 75%;
+    margin-top: -70px;
+}
+
+.paper_about_us_icons {
+    padding-top: 25px;
+}
+
+.paper_about_us_div {
+    padding: 0px 35px;
+}
+
+.paper_about_us_div p {
+    font-size: 15px;
+}
+
+.paper_about_us_icons ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.paper_about_us_icons img {
+    color: #003566;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.paper_about_us_icons ul li {
+    margin: 5px 0px;
+}
+
+/* Shaking animation */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-10px);
+        /* Shake to the left */
+    }
+
+    20% {
+        transform: translateX(10px);
+        /* Shake to the right */
+    }
+
+    30% {
+        transform: translateX(-10px);
+        /* Shake to the left */
+    }
+
+    40% {
+        transform: translateX(10px);
+        /* Shake to the right */
+    }
+
+    50% {
+        transform: translateX(-10px);
+        /* Shake to the left */
+    }
+
+    60% {
+        transform: translateX(10px);
+        /* Shake to the right */
+    }
+
+    70% {
+        transform: translateX(-10px);
+        /* Shake to the left */
+    }
+
+    80% {
+        transform: translateX(10px);
+        /* Shake to the right */
+    }
+
+    90% {
+        transform: translateX(-10px);
+        /* Shake to the left */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* End at original position */
+    }
+}
+
+.paper_about_button.shake {
+    animation: shake 2s ease-in-out;
+    /* Shake animation lasts for 2 seconds */
+}
+
+button.paper_about_button {
+    margin-top: 35px;
+    background-color: #003566;
+    color: white;
+    font-weight: bold;
+    padding: 15px 55px;
+    border-radius: 40px;
+    border: none;
+    text-transform: capitalize;
+    --animation-depth: 0.375em;
+    animation: shake 2s ease-in-out 0s 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.paper_about_button:hover {
+    box-shadow: black 1.95px 4.95px 2.6px;
+    transform: translateY(calc(-1*var(--animation-depth, .375em)));
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+    img.paper_about_us_img_1 {
+        width: 50%;
+        height: 150px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    img.paper_about_us_img_2 {
+        border-radius: 20px;
+        width: 100%;
+        margin-top: -70px;
+        height: 461px;
+        object-fit: cover;
+    }
+
+    img.paper_about_us_img_1 {
+        border-radius: 20px;
+        width: 55%;
+        height: 250px;
+        object-fit: cover;
+        float: right;
+        z-index: 6;
+        position: relative;
+    }
+
+    .paper_about_us_div {
+        padding: 0px 20px;
+    }
+
+    button.paper_about_button {
+        margin-top: 0px;
+        background-color: #003566;
+        color: white;
+        font-weight: bold;
+        padding: 15px 55px;
+        border-radius: 40px;
+        border: none;
+        text-transform: capitalize;
+    }
+}

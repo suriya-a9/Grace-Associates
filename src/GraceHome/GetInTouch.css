@@ -1,0 +1,156 @@
+form#grace_form input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 45px;
+    border: 1px solid #6666;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+form#grace_form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #6666;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+form#grace_form input::placeholder {
+    padding-left: 0px;
+    font-size: 15px;
+}
+
+form#grace_form textarea::placeholder {
+    padding: 0px;
+}
+
+form#grace_form select {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 45px;
+    border: 1px solid #6666;
+    border-radius: 20px;
+}
+
+select#grace_form_select {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+form#grace_form button {
+    width: 25%;
+    border-radius: 30px;
+    border: none;
+    padding-top: 15px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: white;
+    margin: 0% 37%;
+    font-weight: bold;
+    background-color: hsl(208.64deg 57.14% 30.2%);
+    --animation-depth: 0.375em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form#grace_form button:hover {
+    box-shadow: black 1.95px 4.95px 2.6px;
+    transform: translateY(calc(-1*var(--animation-depth, .375em)));
+}
+
+section.get_in_touch_section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+section.get_in_touch_section .row.round {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 35px;
+    background: linear-gradient(to right, white 70%, hsl(208.64deg 57.14% 30.2%) 50%);
+}
+
+.form_div h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.form_div h2 span {
+    color: hsl(208.64deg 57.14% 30.2%);
+}
+
+.form_div p {
+    color: black;
+    margin: 20px 0px;
+}
+
+.form_div {
+    padding: 45px;
+    background-color: white;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    padding-right: 0px;
+}
+
+.map_div {
+    padding: 55px;
+    /* background: linear-gradient(to right, white 70%, hsl(208.64deg 57.14% 30.2%) 50%); */
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    padding-left: 0px;
+}
+
+.icon_div {
+    display: flex;
+    margin-top: 15px;
+}
+
+.icon_div span {
+    color: #003566;
+}
+
+.icon_sub_div p {
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.icon_div svg {
+    font-size: 25px;
+    margin-top: 29px;
+    margin-right: 20px;
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+    .form_div {
+        padding: 25px;
+        background-color: white;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+    }
+
+    .map_div {
+        padding: 0px;
+        /* background: linear-gradient(to right, white 70%, hsl(208.64deg 57.14% 30.2%) 50%); */
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        /* padding-left: 0px; */
+    }
+
+    form#grace_form button {
+        width: 35%;
+        margin: 0% 32%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .icon_div {
+        display: block;
+    }
+
+    form#grace_form button {
+        width: 45%;
+        margin: 0% 27%;
+    }
+}

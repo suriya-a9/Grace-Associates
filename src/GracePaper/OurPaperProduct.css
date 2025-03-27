@@ -1,0 +1,79 @@
+.our_product_div img {
+    width: 100%;
+    height: 359px;
+    object-fit: cover;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transition: transform 0.3s ease-in-out;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.our_product_div img:hover {
+    transform: scale(1.1);
+    /* Zoom in effect */
+}
+
+.our_product_div h4 {
+    color: #003566;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: white;
+    text-transform: capitalize;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -9px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+section.our_product_section h2 {
+    color: hsl(208.64deg 57.14% 30.2%);
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-decoration: underline solid hsl(208.8deg 98.04% 20%) 4px;
+    text-decoration: underline solid hsl(208.8deg 98.04% 20%) 4px;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+}
+
+section.our_product_section {
+    padding: 30px 0px;
+}
+
+.row.second-row {
+    margin-top: 45px;
+}
+
+.our_product_div {
+    position: relative; /* Ensure positioning context for the image */
+    overflow: hidden; /* Hide anything that overflows outside of the container */
+}
+
+.testimonial-name p{
+    height: 0px;
+    overflow: hidden;
+}
+
+.item:hover .testimonial-name p {
+    height: auto;
+    overflow: hidden;
+    font-weight: 400;
+    text-align: center;
+}
+
+.item:hover .testimonial-name{
+   margin: -100px auto 0;
+   position: relative;
+   z-index: 99999999999999999;
+   transition: all 0.3s ease;
+}
+
+/* media query */
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .our_product_div h4 {
+        height: 115px;
+    }
+}

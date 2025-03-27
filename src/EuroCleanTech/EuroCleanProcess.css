@@ -1,0 +1,242 @@
+section.euro_clean_process h2 {
+    color: #003566;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-decoration: underline solid hsl(208.8deg 98.04% 20%) 4px;
+    text-decoration: underline solid hsl(208.8deg 98.04% 20%) 4px;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+}
+
+section.euro_clean_process {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+p.euro_clean_process_p {
+    margin-bottom: 90px;
+}
+
+.euro_clean_process_div img {
+    width: 25%;
+    margin-right: 25px;
+}
+
+.euro_clean_process_div {
+    display: flex;
+    position: relative;
+    border-left: 15px solid #003566;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+/* Dashed Line (Vertical) */
+.euro_clean_process_div::after {
+    content: '';
+    position: absolute;
+    right: -229px;
+    top: 51%;
+    height: 93px;
+    width: 2px;
+    background: repeating-linear-gradient(to bottom, #003566 0px, #003566 10px, transparent 10px, transparent 20px);
+}
+
+/* Downward Arrow */
+.euro_clean_process_div::before {
+    content: '';
+    position: absolute;
+    right: -238px;
+    top: calc(68% + 60px);
+    border: 10px solid transparent;
+    border-top: 15px solid #003566;
+}
+
+/* Horizontal Dashed Arrow from Right */
+.euro_clean_process_div .horizontal-dashed-arrow {
+    position: absolute;
+    right: -231px;
+    top: 50%;
+    height: 2px;
+    width: 231px;
+    background: repeating-linear-gradient(to right, #003566 0px, #003566 10px, transparent 10px, transparent 20px);
+}
+
+.euro_clean_process_div .horizontal-dashed-arrow::after {
+    content: '';
+    position: absolute;
+    display: none;
+    top: -5px;
+    /* Center the arrow */
+    right: 0;
+    /* At the end of the dashed line */
+    border: 10px solid transparent;
+    border-left: 15px solid #003566;
+    /* Creates right-pointing arrow */
+}
+
+.euro_clean_process_div_content {
+    padding: 15px 20px;
+}
+
+.euro_clean_process_div_content h4 {
+    color: #003566;
+    font-weight: bold;
+}
+
+
+/* Left Side arrow */
+
+
+.euro_clean_process_div_left img {
+    width: 25%;
+    margin-right: 25px;
+}
+
+.euro_clean_process_div_left {
+    display: flex;
+    position: relative;
+    border-left: 15px solid #003566;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+/* Dashed Line (Vertical) */
+.euro_clean_process_div_left::after {
+    content: '';
+    position: absolute;
+    left: -231px;
+    top: 51%;
+    height: 93px;
+    width: 2px;
+    background: repeating-linear-gradient(to bottom, #003566 0px, #003566 10px, transparent 10px, transparent 20px);
+}
+
+/* Downward Arrow */
+.euro_clean_process_div_left::before {
+    content: '';
+    position: absolute;
+    left: -238px;
+    top: calc(68% + 60px);
+    border: 10px solid transparent;
+    border-top: 15px solid #003566;
+}
+
+/* Horizontal Dashed Arrow from Right */
+.euro_clean_process_div_left .horizontal-dashed-arrow {
+    position: absolute;
+    left: -231px;
+    top: 50%;
+    height: 2px;
+    width: 231px;
+    background: repeating-linear-gradient(to right, #003566 0px, #003566 10px, transparent 10px, transparent 20px);
+}
+
+.euro_clean_process_div_left .horizontal-dashed-arrow::after {
+    content: '';
+    position: absolute;
+    display: none;
+    top: -5px;
+    /* Center the arrow */
+    right: 0;
+    /* At the end of the dashed line */
+    border: 10px solid transparent;
+    border-left: 15px solid #003566;
+    /* Creates right-pointing arrow */
+}
+
+.row.left_row {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.euro_clean_process_div_last img {
+    width: 25%;
+    margin-right: 25px;
+}
+
+.euro_clean_process_div_last {
+    display: flex;
+    position: relative;
+    border-left: 15px solid #003566;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+/* EuroCleanProcess.css */
+
+/* Set initial state of the elements */
+.euro_clean_process_div,
+.euro_clean_process_div_left {
+    opacity: 0;
+    transform: translateY(100px);
+    /* Initially positioned below */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* This will be applied when the element is visible */
+.euro_clean_process_div.show,
+.euro_clean_process_div_left.show {
+    opacity: 1;
+    transform: translateY(0);
+    /* Move to the normal position */
+}
+
+
+/* media query */
+
+@media (max-width: 768px) {
+    .euro_clean_process_div_last {
+        display: block;
+    }
+
+    .euro_clean_process_div_last img {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .euro_clean_process_div_left {
+        display: block;
+    }
+
+    .euro_clean_process_div_left img {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .euro_clean_process_div {
+        display: block;
+    }
+
+    .euro_clean_process_div img {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .euro_clean_process_div .horizontal-dashed-arrow {
+        display: none;
+    }
+
+    .euro_clean_process_div::before {
+        display: none;
+    }
+
+    .euro_clean_process_div::before {
+        display: none;
+    }
+
+    .euro_clean_process_div::after {
+        display: none;
+    }
+
+    .euro_clean_process_div_left .horizontal-dashed-arrow {
+        display: none;
+    }
+
+    .euro_clean_process_div_left::before {
+        display: none;
+    }
+
+    .euro_clean_process_div_left::after {
+        display: none;
+    }
+}
