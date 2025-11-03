@@ -45,6 +45,6 @@ This enhances user engagement and provides instant answers to visitor queries.
 ## 👨‍💻 Developer  
 
 **Your Name**  
-- 💼 [Portfolio]([https://dev.to/da_faq](https://suriya-a9.github.io/portfolio/))  
+- 💼 [Portfolio](https://suriya-a9.github.io/portfolio/)) 
 - 🐙 [GitHub](https://github.com/suriya-a9)  
 - 💬 [LinkedIn]([in/suriya-prakash-30885818a](https://www.linkedin.com/in/suriya-prakash-30885818a))  
