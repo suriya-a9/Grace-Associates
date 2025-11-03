@@ -41,7 +41,7 @@ This enhances user engagement and provides instant answers to visitor queries.
 
 ## 📸 Screenshots  
 
-*(Add screenshots or GIFs of key pages, animations, or chatbot interactions here.)*  
+![Homepage](./assets/chrome-capture-2025-11-03.gif) 
 
 ---
 
