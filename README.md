@@ -41,7 +41,7 @@ This enhances user engagement and provides instant answers to visitor queries.
 
 ## 📸 Screenshots  
 
-![Homepage](public/assets/chrome-capture-2025-11-03.gif) 
+![Homepage](public/assets/homepage.gif) 
 
 ---
 
