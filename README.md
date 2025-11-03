@@ -36,7 +36,7 @@ This enhances user engagement and provides instant answers to visitor queries.
 
 ---
 
-## 📸 Screenshots  
+## 📸 See It in Motion  
 
 ![Homepage](public/assets/homepage.gif) 
 
