@@ -15,7 +15,6 @@ Developed with **React.js**, featuring smooth **CSS animations** and integrated 
 - **Frontend:** React.js  
 - **Styling:** Custom CSS with animations and transitions  
 - **AI Integration:** Lyro AI chat widget  
-- **Deployment:** *(Add where it’s hosted – e.g., Vercel, Netlify, AWS)*  
 - **Version Control:** Git & GitHub  
 
 ---
@@ -35,8 +34,6 @@ Developed with **React.js**, featuring smooth **CSS animations** and integrated 
 Lyro AI was integrated using their official embed script, allowing real-time conversations between site visitors and the firm’s AI assistant.  
 This enhances user engagement and provides instant answers to visitor queries.
 
-*(You can include your integration snippet here if you want to showcase implementation details.)*
-
 ---
 
 ## 📸 Screenshots  
@@ -48,6 +45,6 @@ This enhances user engagement and provides instant answers to visitor queries.
 ## 👨‍💻 Developer  
 
 **Your Name**  
-- 💼 [Portfolio](#)  
-- 🐙 [GitHub](#)  
-- 💬 [LinkedIn](#)  
+- 💼 [Portfolio](https://dev.to/da_faq)  
+- 🐙 [GitHub](https://github.com/suriya-a9)  
+- 💬 [LinkedIn](in/suriya-prakash-30885818a)  
